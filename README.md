@@ -32,11 +32,11 @@
 
 <h6>ESP que contiene el sensor DHT11</h6>
 
-<iframe src="https://drive.google.com/file/d/1N0D9GCPQaSPdIw1wL8W9xMw6RmmExXpd/preview" width="640" height="480" allow="autoplay"></iframe>
+![alt text](https://i.ibb.co/1zhG9KQ/DHT11.png)
 
 <h6>ESPs que completan la pasarela</h6>
 
-<img src="https://drive.google.com/file/d/13c4O-GmMliFKPAPOiN_fHPxZQ---mrOV/preview">
+![alt text](https://i.ibb.co/bKSPNXR/Pasarela.jpg)
 
 <h3>Despliegue del proyecto</h3>
 
