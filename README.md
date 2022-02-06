@@ -3,8 +3,8 @@
 <p>Trabajo final de máster de Ingeniería Informática de la Univerisdad de Málaga realizado por:</p>
 
 <ul>
-  <li>Nombre del estudiante: Rafael Alejandro García Rodríguez.</li>
-  <li>Nombre del tutor: Andrés Rodríguez Moreno.</li>
+  <li><b>Nombre del estudiante:</b> Rafael Alejandro García Rodríguez.</li>
+  <li><b>Nombre del tutor:</b> Andrés Rodríguez Moreno.</li>
 </ul>
 
 <h3>Introducción y objetivo</h3>
