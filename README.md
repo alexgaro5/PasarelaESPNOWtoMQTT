@@ -20,6 +20,7 @@
 <ul>
   <li><b>VM:</b> En ella se guarda el certificado que usaremos para conectarlos al broker MQTT desde Node-Red y desde la ESP. También tenemos el flujo de Node-Red, y un enlace para descargar la máquina virtual completa con el broker MQTT y Node-Red.</li>
   <li><b>Arduino:</b> Contiene el código que hay que cargar en la ESP que juega el rol de ESP con el sensor DHT11 (EspDHT11), el código de la ESP que está en la pasarela y recibe los mensajes de ESP-NOW (EspPasarelaEspNow) y el código de la ESP que está en la pasarela y envía los datos por MQTT a Node-Red (EspPasarelaMQTT).</li>
+</ul>
 
 <p>Para ejecutar el Node-Red y el broker MQTT simplemente debemos de importar la máquina virtual, encenderla y ejecutar el script que está en el escritorio llamado "config.sh".</p>
 <p>El código de la ESP-32 simplemente descargarlo, compilarlo y cargarlo en las correspondientes ESPs.</p>
