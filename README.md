@@ -32,7 +32,7 @@
 
 <h6>ESP que contiene el sensor DHT11</h6>
 
-<img src="https://drive.google.com/file/d/1N0D9GCPQaSPdIw1wL8W9xMw6RmmExXpd/preview">
+<iframe src="https://drive.google.com/file/d/1N0D9GCPQaSPdIw1wL8W9xMw6RmmExXpd/preview" width="640" height="480" allow="autoplay"></iframe>
 
 <h6>ESPs que completan la pasarela</h6>
 
