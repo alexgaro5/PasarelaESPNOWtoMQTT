@@ -41,7 +41,7 @@
 <h3>Despliegue del proyecto</h3>
 
 <p>Para ejecutar el Node-Red y el broker MQTT simplemente debemos de importar la máquina virtual, encenderla y ejecutar el script que está en el escritorio llamado "config.sh".</p>
-<p>El código de la ESP-32 simplemente descargarlo, compilarlo y cargarlo en las correspondientes ESPs.</p>
+<p>El código de las ESPs es simplemente descargarlo, compilarlo y cargarlo en las correspondientes ESPs.</p>
 
 <p>El cualquier plataforma que nos puedan pedir algun usuario y contraseña para algo (administrador de Linux, autenticación del MQTT, dashboard del broker MQTT...) es:</p>
 <ul>
