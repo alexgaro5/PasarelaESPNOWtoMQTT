@@ -125,6 +125,7 @@ void setup() {
 
       //Actualizamos la frecuencia.
       frecuenciaActualizacion = frecuencia1+frecuencia2;
+      countTime=millis()+frecuenciaActualizacion*1000;
       Serial.println("Tiempo de frecuencia actualizado.");
     }
 	});
@@ -171,7 +172,7 @@ void loop() {
     digitalWrite(LEDCheck, HIGH);
     
     //Creamos y mostramos el JSON que se va a enviar.
-    sprintf(mensaje,"{\"status\": \"alive\"}");
+    sprintf(mensaje,"{\"status\":\"alive\",\"freq\":\"%i\"}", frecuenciaActualizacion);
     Serial.printf("Mensaje: %s\n",mensaje);
     
     //Enviamos el JSON por ESP_NOW
