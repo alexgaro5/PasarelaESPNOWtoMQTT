@@ -1,0 +1,911 @@
+[
+    {
+        "id": "a63082bb.8598a",
+        "type": "tab",
+        "label": "Flow",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "fc5c9554.5f0878",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.1.101",
+        "port": "8883",
+        "tls": "331327426fd4739f",
+        "clientid": "NodeRed",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "3",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "6ec540d2.45911",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "26f7929e.03856e",
+        "type": "ui_tab",
+        "name": "Interfaz de la pasarela",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "9bac0f24.dbd14",
+        "type": "ui_group",
+        "name": "Control del LED",
+        "tab": "26f7929e.03856e",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a4309177.e947a",
+        "type": "ui_group",
+        "name": "Termostato",
+        "tab": "26f7929e.03856e",
+        "order": 1,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "36186f202ce0a03b",
+        "type": "noraf-config",
+        "name": "NoraConfig",
+        "group": "",
+        "twofactor": "off",
+        "twofactorpin": "",
+        "localexecution": true,
+        "structure": "ESP",
+        "storeStateInContext": true
+    },
+    {
+        "id": "331327426fd4739f",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "ca.pem",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": false,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "de2f4171d814f406",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "iot.ac.uma.es",
+        "port": "1883",
+        "clientid": "NodeRed",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "ae04e1a6cfa00a24",
+        "type": "ui_group",
+        "name": "Configuración de la ESP",
+        "tab": "26f7929e.03856e",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b20bc1ca.a7d2d",
+        "type": "mqtt in",
+        "z": "a63082bb.8598a",
+        "name": "",
+        "topic": "infind/espnow/3E3333333334/datos",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "fc5c9554.5f0878",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 220,
+        "y": 120,
+        "wires": [
+            [
+                "dbe5dbb3.6c2dc8"
+            ]
+        ]
+    },
+    {
+        "id": "eabf82fd.2f0b8",
+        "type": "mqtt out",
+        "z": "a63082bb.8598a",
+        "name": "",
+        "topic": "infind/espnow/led",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "fc5c9554.5f0878",
+        "x": 590,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "dbe5dbb3.6c2dc8",
+        "type": "json",
+        "z": "a63082bb.8598a",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 450,
+        "y": 120,
+        "wires": [
+            [
+                "65e50227.fe4ccc",
+                "c74d132f.fd4df",
+                "29ea8c80.703244",
+                "27900a06360abb22"
+            ]
+        ]
+    },
+    {
+        "id": "65e50227.fe4ccc",
+        "type": "function",
+        "z": "a63082bb.8598a",
+        "name": "getHum",
+        "func": "msg.payload = msg.payload.mensaje['hum'];\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 120,
+        "wires": [
+            [
+                "ae7ef0ca.493e2"
+            ]
+        ]
+    },
+    {
+        "id": "c74d132f.fd4df",
+        "type": "function",
+        "z": "a63082bb.8598a",
+        "name": "getTemp",
+        "func": "msg.payload = msg.payload.mensaje['temp'];\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 620,
+        "y": 160,
+        "wires": [
+            [
+                "bf3ccd17.85e5b"
+            ]
+        ]
+    },
+    {
+        "id": "f7d0d1da.f1593",
+        "type": "function",
+        "z": "a63082bb.8598a",
+        "name": "getMac",
+        "func": "var macWithFormat = msg.payload['mac'].toString(16).match( /.{1,2}/g ).join( ':' ) ;\nvar macWithoutFormat = msg.payload['mac'];\n\nglobal.set('mac',macWithoutFormat);\nmsg.payload = macWithFormat;\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 400,
+        "wires": [
+            [
+                "b224d4f3.e04d78"
+            ]
+        ]
+    },
+    {
+        "id": "29ea8c80.703244",
+        "type": "function",
+        "z": "a63082bb.8598a",
+        "name": "getTempAndHum",
+        "func": "var temp = msg.payload.mensaje['temp'];\nvar hum = msg.payload.mensaje['hum'];\n\nmsg.payload = {\"temperature\": temp, \"humidity\": hum};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 200,
+        "wires": [
+            [
+                "9b199630f7aadbe3"
+            ]
+        ]
+    },
+    {
+        "id": "385df0d1.53461",
+        "type": "comment",
+        "z": "a63082bb.8598a",
+        "name": "Termostato",
+        "info": "",
+        "x": 100,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "d5ab8f2d.3d7ed",
+        "type": "comment",
+        "z": "a63082bb.8598a",
+        "name": "LED",
+        "info": "",
+        "x": 90,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "6ec810da.c66b8",
+        "type": "ui_switch",
+        "z": "a63082bb.8598a",
+        "name": "switchLed",
+        "label": "Encender/Apagar",
+        "tooltip": "",
+        "group": "9bac0f24.dbd14",
+        "order": 2,
+        "width": "6",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 140,
+        "y": 640,
+        "wires": [
+            [
+                "e28f33789981c4e1",
+                "93b7e8c9.476cc8",
+                "13c24fd86c3d1202"
+            ]
+        ]
+    },
+    {
+        "id": "ae7ef0ca.493e2",
+        "type": "ui_gauge",
+        "z": "a63082bb.8598a",
+        "name": "",
+        "group": "a4309177.e947a",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Humedad",
+        "label": "%",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 840,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "bf3ccd17.85e5b",
+        "type": "ui_gauge",
+        "z": "a63082bb.8598a",
+        "name": "",
+        "group": "a4309177.e947a",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperatura",
+        "label": "ºC",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "60",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 850,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "b224d4f3.e04d78",
+        "type": "ui_text",
+        "z": "a63082bb.8598a",
+        "group": "ae04e1a6cfa00a24",
+        "order": 1,
+        "width": "6",
+        "height": "1",
+        "name": "",
+        "label": "Mac del dispositivo",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 870,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "93b7e8c9.476cc8",
+        "type": "ui_led",
+        "z": "a63082bb.8598a",
+        "order": 1,
+        "group": "9bac0f24.dbd14",
+        "width": "6",
+        "height": "1",
+        "label": "LED",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "yellow",
+                "value": "1",
+                "valueType": "str"
+            },
+            {
+                "color": "grey",
+                "value": "0",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "name": "iconoLed",
+        "x": 360,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "9b199630f7aadbe3",
+        "type": "noraf-thermostat",
+        "z": "a63082bb.8598a",
+        "devicename": "Termostato",
+        "roomhint": "ESP",
+        "name": "",
+        "modes": "off",
+        "unit": "C",
+        "rangeMin": "",
+        "rangeMax": "",
+        "topic": "",
+        "passthru": false,
+        "commandOnly": false,
+        "queryOnly": false,
+        "bufferRangeCelsius": 2,
+        "nora": "36186f202ce0a03b",
+        "twofactor": "off",
+        "twofactorpin": "",
+        "filter": false,
+        "x": 850,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e28f33789981c4e1",
+        "type": "noraf-switch",
+        "z": "a63082bb.8598a",
+        "devicename": "LED",
+        "roomhint": "ESP",
+        "name": "",
+        "passthru": false,
+        "errorifstateunchaged": false,
+        "nora": "36186f202ce0a03b",
+        "topic": "",
+        "onvalue": "1",
+        "onvalueType": "str",
+        "offvalue": "0",
+        "offvalueType": "str",
+        "twofactor": "off",
+        "twofactorpin": "",
+        "filter": false,
+        "asyncCmd": false,
+        "outputs": 1,
+        "x": 130,
+        "y": 560,
+        "wires": [
+            [
+                "93b7e8c9.476cc8",
+                "6ec810da.c66b8"
+            ]
+        ]
+    },
+    {
+        "id": "61d59fbcfcf970cd",
+        "type": "inject",
+        "z": "a63082bb.8598a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "{\"mensaje\": {\"status\": \"check\"}}",
+        "payloadType": "json",
+        "x": 470,
+        "y": 340,
+        "wires": [
+            [
+                "6d51f44515c66ba4"
+            ]
+        ]
+    },
+    {
+        "id": "6d51f44515c66ba4",
+        "type": "function",
+        "z": "a63082bb.8598a",
+        "name": "isESPAlive",
+        "func": "var dateLastSurvive = global.get('date') || new Date(\"December 17, 1995 03:24:00\");;\nvar currentDate = new Date();\n\nif(msg.payload.mensaje[\"status\"] == 'alive'){\n   global.set('date',currentDate);\n   dateLastSurvive = global.get('date');\n}\n\nif(Math.abs(currentDate - dateLastSurvive)>5000){\n    msg.payload='Desconectado';    \n}else{\n    msg.payload='Conectado';\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 340,
+        "wires": [
+            [
+                "b81e735f24a7785b",
+                "4b925dd81d454a84"
+            ]
+        ]
+    },
+    {
+        "id": "b81e735f24a7785b",
+        "type": "ui_led",
+        "z": "a63082bb.8598a",
+        "order": 3,
+        "group": "ae04e1a6cfa00a24",
+        "width": "6",
+        "height": "1",
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#008000",
+                "value": "Conectado",
+                "valueType": "str"
+            },
+            {
+                "color": "#ff0000",
+                "value": "Desconectado",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "statusESP",
+        "x": 850,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "6414b1249bfa821a",
+        "type": "comment",
+        "z": "a63082bb.8598a",
+        "name": "Status",
+        "info": "",
+        "x": 90,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "13c24fd86c3d1202",
+        "type": "function",
+        "z": "a63082bb.8598a",
+        "name": "prepareMsg",
+        "func": "var mac = global.get('mac') || \"3E3333333334\";\nvar ledStatus = msg.payload;\n\nmsg.payload = {\"mac\": mac, \"mensaje\": {\"led\": ledStatus}};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 640,
+        "wires": [
+            [
+                "eabf82fd.2f0b8"
+            ]
+        ]
+    },
+    {
+        "id": "073657726154238f",
+        "type": "json",
+        "z": "a63082bb.8598a",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 470,
+        "y": 400,
+        "wires": [
+            [
+                "f7d0d1da.f1593",
+                "6d51f44515c66ba4"
+            ]
+        ]
+    },
+    {
+        "id": "50fc97640476fb43",
+        "type": "mqtt out",
+        "z": "a63082bb.8598a",
+        "name": "",
+        "topic": "infind/espnow/frecuencia",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "fc5c9554.5f0878",
+        "x": 1330,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "6c1ca34516ba458e",
+        "type": "comment",
+        "z": "a63082bb.8598a",
+        "name": "Frecuencia de actualización",
+        "info": "",
+        "x": 160,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "e68a9fa6a1f5432c",
+        "type": "function",
+        "z": "a63082bb.8598a",
+        "name": "prepareMsg",
+        "func": "var mac = global.get('mac') || \"3E3333333334\";\nvar frecuencia = msg.payload;\n\nmsg.payload = {\"mac\": mac, \"mensaje\": {\"frecuencia\": frecuencia}};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 820,
+        "wires": [
+            [
+                "50fc97640476fb43"
+            ]
+        ]
+    },
+    {
+        "id": "e4f09eec7b9df573",
+        "type": "ui_slider",
+        "z": "a63082bb.8598a",
+        "name": "frecuenciaUpdate",
+        "label": "",
+        "tooltip": "",
+        "group": "ae04e1a6cfa00a24",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": "10",
+        "max": "60",
+        "step": 1,
+        "className": "",
+        "x": 870,
+        "y": 820,
+        "wires": [
+            [
+                "e68a9fa6a1f5432c"
+            ]
+        ]
+    },
+    {
+        "id": "d9d1473916158982",
+        "type": "ui_text",
+        "z": "a63082bb.8598a",
+        "group": "ae04e1a6cfa00a24",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Frecuencia de actualización (seg)",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 920,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "27900a06360abb22",
+        "type": "function",
+        "z": "a63082bb.8598a",
+        "name": "getUpdateDate",
+        "func": "const event = new Date();\nconst options = {weekday: \"long\", year: \"numeric\", month: \"long\", day: \"numeric\", hour: \"2-digit\", minute: \"2-digit\", second: \"2-digit\"};\n\nmsg.payload = event.toLocaleDateString('es-ES', options);\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 80,
+        "wires": [
+            [
+                "7875335745b9b843"
+            ]
+        ]
+    },
+    {
+        "id": "4b925dd81d454a84",
+        "type": "ui_text",
+        "z": "a63082bb.8598a",
+        "group": "ae04e1a6cfa00a24",
+        "order": 2,
+        "width": "6",
+        "height": "1",
+        "name": "",
+        "label": "Estado del dispositivo",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 880,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "7875335745b9b843",
+        "type": "ui_text",
+        "z": "a63082bb.8598a",
+        "group": "a4309177.e947a",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "name": "",
+        "label": "Fecha de última actualización",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 910,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "3ac6e6788f5be118",
+        "type": "mqtt in",
+        "z": "a63082bb.8598a",
+        "name": "",
+        "topic": "infind/espnow/3E3333333334/status",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "fc5c9554.5f0878",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 400,
+        "wires": [
+            [
+                "073657726154238f"
+            ]
+        ]
+    },
+    {
+        "id": "1cf332206879df8e",
+        "type": "json",
+        "z": "a63082bb.8598a",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 470,
+        "y": 820,
+        "wires": [
+            [
+                "fe53f42747da3e15"
+            ]
+        ]
+    },
+    {
+        "id": "86e52e262e381162",
+        "type": "mqtt in",
+        "z": "a63082bb.8598a",
+        "name": "",
+        "topic": "infind/espnow/3E3333333334/status",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "fc5c9554.5f0878",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 820,
+        "wires": [
+            [
+                "1cf332206879df8e"
+            ]
+        ]
+    },
+    {
+        "id": "fe53f42747da3e15",
+        "type": "function",
+        "z": "a63082bb.8598a",
+        "name": "getFrequence",
+        "func": "msg.payload=msg.payload.mensaje['freq']\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 820,
+        "wires": [
+            [
+                "e4f09eec7b9df573",
+                "d9d1473916158982"
+            ]
+        ]
+    }
+]
